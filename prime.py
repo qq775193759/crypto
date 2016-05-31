@@ -47,12 +47,22 @@ def test(n):
     return True
         
     
-    
-#n = rand_uint(10)
+def prime_make(lenth):
+    #n = rand_uint(10)
+    bo = False
+    while(not bo):
+        n = rand_uint(lenth)
+        #print("%d"%(n))
+        bo = test(n)
+        #print bo
+    return n
+        
 
-bo = False
-while(not bo):
-    n = rand_uint(512)
-    print("%d"%(n))
-    bo = test(n)
-    print bo
+def pq_make():
+    p = prime_make(512)
+    q = prime_make(512)
+    print p
+    print q
+
+    
+pq_make()
