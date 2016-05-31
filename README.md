@@ -1,5 +1,7 @@
 # crypto
 
+using python27
+
 prime.py
 	make prime for (1)
 
